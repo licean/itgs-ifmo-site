@@ -1,1 +1,5 @@
 *.agdai
+.idea
+dev
+prod
+/app/cache/prod
