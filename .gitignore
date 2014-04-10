@@ -3,3 +3,5 @@
 dev
 prod
 /app/cache/prod
+/app/logs/dev.log
+/app/logs/prod.log
