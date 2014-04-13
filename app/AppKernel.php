@@ -40,6 +40,17 @@ class AppKernel extends Kernel
 			*/
 			new Sonata\UserBundle\SonataUserBundle('FOSUserBundle'),
 			new Application\Sonata\UserBundle\ApplicationSonataUserBundle(),
+
+			/*	@author ishebarshov
+			*	Enable SonataPageBundle with all dependencies
+			*/
+			new Sonata\CacheBundle\SonataCacheBundle(),
+			new Sonata\SeoBundle\SonataSeoBundle(),
+			new Sonata\NotificationBundle\SonataNotificationBundle(),
+			new Application\Sonata\NotificationBundle\ApplicationSonataNotificationBundle(),
+			new Symfony\Cmf\Bundle\RoutingBundle\CmfRoutingBundle(),
+			new Sonata\PageBundle\SonataPageBundle(),
+			new Application\Sonata\PageBundle\ApplicationSonataPageBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

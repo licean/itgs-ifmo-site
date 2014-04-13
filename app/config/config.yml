@@ -1,6 +1,14 @@
 imports:
     - { resource: parameters.yml }
     - { resource: security.yml }
+    - { resource: fos/fos_user.yml }
+    - { resource: sonata/sonata_block.yml }
+    - { resource: sonata/sonata_admin.yml }
+    - { resource: sonata/sonata_user.yml }
+    - { resource: sonata/sonata_cache.yml }
+    - { resource: sonata/sonata_seo.yml }
+    - { resource: sonata/sonata_notification.yml }
+    - { resource: sonata/sonata_page.yml }
     - { resource: @AcmeDemoBundle/Resources/config/admin.xml }
 framework:
     #esi:             ~
@@ -75,40 +83,3 @@ swiftmailer:
     password:  "%mailer_password%"
     spool:     { type: memory }
 
-# FOSUserBundle Configuration
-fos_user:
-    db_driver: orm
-    firewall_name: main
-    user_class: Application\Sonata\UserBundle\Entity\User
-    group:
-        group_class:   Application\Sonata\UserBundle\Entity\Group
-        group_manager: sonata.user.orm.group_manager
-
-    service:
-        user_manager: sonata.user.orm.user_manager
-
-# SonataAdminBundle Configuration
-sonata_block:
-    default_contexts: [cms]
-    blocks:
-        # Enable the SonataAdminBundle block
-        sonata.admin.block.admin_list:
-            contexts:   [admin]
-        sonata.admin.block.search_result:
-            contexts: [admin]
-        # Your other blocks
-        sonata.block.service.text:
-        sonata.block.service.rss:
-        sonata.user.block.menu:    # used to display the menu in profile pages
-        sonata.user.block.account: # used to display menu option (login option)
-sonata_admin:
-    templates:
-        layout:  ApplicationSonataAdminBundle::standard_layout.html.twig
-
-# SonataUserBundle Configuration
-sonata_user:
-    security_acl: true
-    manager_type: orm
-
-parameters:
-    sonata.user.admin.user.entity: Application\Sonata\UserBundle\Entity\User

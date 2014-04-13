@@ -1,0 +1,6 @@
+# SonataUserBundle Configuration
+sonata_user:
+    security_acl: true
+    manager_type: orm
+parameters:
+    sonata.user.admin.user.entity: Application\Sonata\UserBundle\Entity\User
