@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="" >
+        <body>
+            <trans-unit id="ROLE_USER">
+                <source>ROLE_USER</source>
+                <target>Пользователь</target>
+            </trans-unit>
+			<trans-unit id="ROLE_ADMIN: ROLE_USER, ROLE_SONATA_ADMIN">
+                <source>ROLE_ADMIN: ROLE_USER, ROLE_SONATA_ADMIN</source>
+                <target>Администратор: Пользователь, Администрирование</target>
+            </trans-unit>
+			<trans-unit id="ROLE_SONATA_ADMIN">
+                <source>ROLE_SONATA_ADMIN</source>
+                <target>Администрирование</target>
+            </trans-unit>
+			<trans-unit id="ROLE_SUPER_ADMIN: ROLE_ADMIN, ROLE_ALLOWED_TO_SWITCH">
+                <source>ROLE_SUPER_ADMIN: ROLE_ADMIN, ROLE_ALLOWED_TO_SWITCH</source>
+                <target>Супер Администратор: Администратор, Просмотр под другим пользователем</target>
+            </trans-unit>
+			<trans-unit id="ROLE_ALLOWED_TO_SWITCH">
+                <source>ROLE_ALLOWED_TO_SWITCH</source>
+                <target>Просмотр под другим пользователем</target>
+            </trans-unit>
+			<trans-unit id="Actions">
+                <source>Actions</source>
+                <target>Действия</target>
+            </trans-unit>
+			<trans-unit id="title_dashboard">
+                <source>title_dashboard</source>
+                <target>Панель администрирования</target>
+            </trans-unit>
+<!--			 
+ Пользователь
+ ROLE_SONATA_ADMIN
+ ROLE_SUPER_ADMIN: ROLE_ADMIN, ROLE_ALLOWED_TO_SWITCH
+ 
+ SONATA: ROLE_SONATA_PAGE_ADMIN_PAGE_EDIT
+ ROLE_SONATA_PAGE_ADMIN_PAGE_EDIT-->
+        </body>
+    </file>
+</xliff>

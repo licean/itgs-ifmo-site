@@ -30,13 +30,14 @@ class AppKernel extends Kernel
 			new Sonata\BlockBundle\SonataBlockBundle(),
 			new Sonata\jQueryBundle\SonatajQueryBundle(),
 			new Knp\Bundle\MenuBundle\KnpMenuBundle(),
+			new Sonata\EasyExtendsBundle\SonataEasyExtendsBundle(),
 			new Sonata\DoctrineORMAdminBundle\SonataDoctrineORMAdminBundle(), 	
 			new Sonata\AdminBundle\SonataAdminBundle(),
+			new Application\Sonata\AdminBundle\ApplicationSonataAdminBundle(),
 			
 			/*	@author ishebarshov
 			*	Enable SonataUserBundle for connecting SonataAdminBundle with FOSUserBundle
 			*/
-			new Sonata\EasyExtendsBundle\SonataEasyExtendsBundle(),
 			new Sonata\UserBundle\SonataUserBundle('FOSUserBundle'),
 			new Application\Sonata\UserBundle\ApplicationSonataUserBundle(),
         );

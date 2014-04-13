@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="SonataUserBundle.en.xliff" >
+        <body>
+            <trans-unit id="security.login.username">
+                <source>security.login.username</source>
+                <target>Имя пользователя</target>
+            </trans-unit>
+			<trans-unit id="security.login.password">
+                <source>security.login.password</source>
+                <target>Пароль</target>
+            </trans-unit>
+			<trans-unit id="forgotten_password">
+                <source>forgotten_password</source>
+                <target>Забыл пароль?</target>
+            </trans-unit>
+			<trans-unit id="title_user_authentication">
+                <source>title_user_authentication</source>
+                <target>Вход в систему</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
