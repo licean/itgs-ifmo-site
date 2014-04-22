@@ -16,7 +16,15 @@ class AppKernel extends Kernel
             new Symfony\Bundle\AsseticBundle\AsseticBundle(),
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
-			
+
+			/*	@author ishebarshov
+			*	Enable SonataFormatterBundle
+			*/
+			new Sonata\MarkItUpBundle\SonataMarkItUpBundle(),
+			new Knp\Bundle\MarkdownBundle\KnpMarkdownBundle(),
+			new Ivory\CKEditorBundle\IvoryCKEditorBundle(),
+			new Sonata\FormatterBundle\SonataFormatterBundle(),
+
 			/*
 			*	@author ishebarshov
 			*	Enable FOSUserBundle - security, login, registration
@@ -51,6 +59,7 @@ class AppKernel extends Kernel
 			new Symfony\Cmf\Bundle\RoutingBundle\CmfRoutingBundle(),
 			new Sonata\PageBundle\SonataPageBundle(),
 			new Application\Sonata\PageBundle\ApplicationSonataPageBundle(),
+
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
@@ -67,4 +76,10 @@ class AppKernel extends Kernel
     {
         $loader->load(__DIR__.'/config/config_'.$this->getEnvironment().'.yml');
     }
+
+	public function getCharset()
+	{
+		return 'UTF-8';
+	}
+
 }

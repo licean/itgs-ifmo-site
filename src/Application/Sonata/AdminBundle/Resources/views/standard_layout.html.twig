@@ -32,7 +32,6 @@ file that was distributed with this source code.
             {% for stylesheet in admin_pool.getOption('stylesheets', []) %}
                 <link rel="stylesheet" href="{{ asset(stylesheet) }}" />
             {% endfor %}
-
         {% endblock %}
 
         {% block javascripts %}

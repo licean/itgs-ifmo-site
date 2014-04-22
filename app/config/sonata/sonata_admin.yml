@@ -1,7 +1,7 @@
 # SonataAdminBundle Configuration
 sonata_admin:
     templates:
-        layout:  ApplicationSonataAdminBundle::standard_layout.html.twig
+        layout:  SonataAdminBundle::layout.html.twig
 #    assets:
 #        javascripts:
 #            - bundles/sonataadmin/vendor/jquery/dist/jquery.min.js

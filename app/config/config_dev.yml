@@ -1,5 +1,6 @@
 imports:
     - { resource: config.yml }
+    - { resource: @AcmeDemoBundle/Resources/config/admin.xml }
 
 framework:
     router:

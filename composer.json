@@ -32,7 +32,9 @@
         "sonata-project/notification-bundle": "dev-master",
         "symfony-cmf/routing": "dev-master",
         "symfony-cmf/routing-bundle": "dev-master",
-        "sonata-project/page-bundle": "dev-master"
+        "sonata-project/page-bundle": "dev-master",
+        "sonata-project/markitup-bundle": "dev-master",
+        "sonata-project/formatter-bundle": "dev-master"
     },
     "scripts": {
         "post-install-cmd": [
