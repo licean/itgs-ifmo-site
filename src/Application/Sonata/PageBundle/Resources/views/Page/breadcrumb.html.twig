@@ -1,0 +1,12 @@
+{% if breadcrumbs %}
+    <ul {% for attrname, attrvalue in options.container_attr %}{{ attrname }}="{{ attrvalue }}" {% endfor %}>
+        {% for breadcrumb in breadcrumbs %}
+            {% if not breadcrumb.isdynamic %}
+					<li><a href="{{ path(breadcrumb) }}" title="{{ breadcrumb.name }}">{{ breadcrumb.name }}</a>{{ options.separator|raw }}</li>
+            {% else %}
+                <li>{{ breadcrumb.name }}{{ options.separator|raw }}</li>
+            {% endif %}
+        {% endfor %}
+        <li class="{{ options.current_class }}">{{ page.name }}{{ options.last_separator|raw }}</li>
+    </ul>
+{% endif %}

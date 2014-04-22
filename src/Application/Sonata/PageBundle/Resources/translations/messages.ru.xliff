@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file source-language="en" datatype="plaintext" original="" >
+		<body>
+			<trans-unit id="error.uniq_url">
+				<source>error.uniq_url</source>
+				<target>The URL '%url%' is already associated with another page</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

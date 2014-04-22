@@ -11,6 +11,8 @@ return array(
     'Sonata\\SeoBundle\\' => array($vendorDir . '/sonata-project/seo-bundle'),
     'Sonata\\PageBundle\\' => array($vendorDir . '/sonata-project/page-bundle'),
     'Sonata\\NotificationBundle\\' => array($vendorDir . '/sonata-project/notification-bundle'),
+    'Sonata\\MarkItUpBundle\\' => array($vendorDir . '/sonata-project/markitup-bundle'),
+    'Sonata\\FormatterBundle\\' => array($vendorDir . '/sonata-project/formatter-bundle'),
     'Sonata\\EasyExtendsBundle\\' => array($vendorDir . '/sonata-project/easy-extends-bundle'),
     'Sonata\\Doctrine\\Tests\\' => array($vendorDir . '/sonata-project/doctrine-extensions/tests'),
     'Sonata\\Doctrine\\' => array($vendorDir . '/sonata-project/doctrine-extensions/src'),

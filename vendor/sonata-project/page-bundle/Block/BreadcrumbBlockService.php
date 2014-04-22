@@ -17,6 +17,7 @@ use Sonata\BlockBundle\Block\BlockContextInterface;
 use Sonata\PageBundle\CmsManager\CmsManagerSelectorInterface;
 use Sonata\SeoBundle\Block\Breadcrumb\BaseBreadcrumbMenuBlockService;
 use Symfony\Bundle\FrameworkBundle\Templating\EngineInterface;
+use Symfony\Component\Config\Definition\Exception\Exception;
 
 /**
  * BlockService for homepage breadcrumb.
@@ -74,7 +75,6 @@ class BreadcrumbBlockService extends BaseBreadcrumbMenuBlockService
             if ($parent->isError()) {
                 continue;
             }
-
             $menu->addChild($parent->getName(), array(
                 'route'           => 'page_slug',
                 'routeParameters' => array(

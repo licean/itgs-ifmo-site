@@ -73,6 +73,7 @@ class ChildrenPagesBlockService extends BaseBlockService
 
         return $this->renderResponse($blockContext->getTemplate(), array(
             'page'     => $page,
+			'currentPage' => $cmsManager->getCurrentPage(),
             'block'    => $blockContext->getBlock(),
             'settings' => $settings
         ), $response);

@@ -51,7 +51,7 @@ class UniqueUrlValidator extends ConstraintValidator
             return;
         }
 
-        $this->manager->fixUrl($value);
+		$this->manager->fixUrl($value);
 
         $pages = $this->manager->findBy(array(
             'site' => $value->getSite(),

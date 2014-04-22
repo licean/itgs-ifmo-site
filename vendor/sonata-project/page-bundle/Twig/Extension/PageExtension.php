@@ -139,6 +139,10 @@ class PageExtension extends \Twig_Extension
         if ($page) {
             $breadcrumbs = $page->getParents();
 
+/*			if (isset($breadcrumbs[0]) && $breadcrumbs[0]->getRouteName() == '_page_internal_global') {
+				unset($breadcrumbs[0]);
+			}*/
+
             if ($options['force_view_home_page'] && (!isset($breadcrumbs[0]) || $breadcrumbs[0]->getRouteName() != 'homepage')) {
 
                 try {

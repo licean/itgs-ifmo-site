@@ -191,7 +191,11 @@ abstract class Page implements PageInterface
      */
     public function setSlug($slug)
     {
-        $this->slug = self::slugify(trim($slug));
+		if ($slug){
+			$this->slug = self::slugify(trim($slug));
+		}else{
+			$this->slug = null;
+		}
     }
 
     /**
@@ -686,7 +690,7 @@ abstract class Page implements PageInterface
 
         // transliterate
         if (function_exists('iconv')) {
-            $text = iconv('utf-8', 'us-ascii//TRANSLIT', $text);
+            $text = @iconv('utf-8', 'us-ascii//TRANSLIT', $text);
         }
 
         // lowercase

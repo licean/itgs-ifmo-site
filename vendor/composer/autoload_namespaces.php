@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'dflydev\\markdown' => array($vendorDir . '/dflydev/markdown/src'),
     'Twig_Extensions_' => array($vendorDir . '/twig/extensions/lib'),
     'Twig_' => array($vendorDir . '/twig/twig/lib'),
     'Symfony\\Component\\Icu\\' => array($vendorDir . '/symfony/icu'),
@@ -27,10 +28,12 @@ return array(
     'Metadata\\' => array($vendorDir . '/jms/metadata/src'),
     'Knp\\Menu\\' => array($vendorDir . '/knplabs/knp-menu/src'),
     'Knp\\Bundle\\MenuBundle' => array($vendorDir . '/knplabs/knp-menu-bundle'),
+    'Knp\\Bundle\\MarkdownBundle' => array($vendorDir . '/knplabs/knp-markdown-bundle'),
     'JsonpCallbackValidator' => array($vendorDir . '/willdurand/jsonp-callback-validator/src'),
     'JMS\\SerializerBundle' => array($vendorDir . '/jms/serializer-bundle'),
     'JMS\\Serializer' => array($vendorDir . '/jms/serializer/src'),
     'JMS\\' => array($vendorDir . '/jms/parser-lib/src'),
+    'Ivory\\CKEditorBundle' => array($vendorDir . '/egeloen/ckeditor-bundle'),
     'Incenteev\\ParameterHandler' => array($vendorDir . '/incenteev/composer-parameter-handler'),
     'FOS\\UserBundle' => array($vendorDir . '/friendsofsymfony/user-bundle'),
     'FOS\\RestBundle' => array($vendorDir . '/friendsofsymfony/rest-bundle'),
